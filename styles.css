@@ -1,0 +1,189 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(81, 82, 81);
+    overflow-x: hidden;
+    color: #f8f8f2;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 8px;
+    width: 100px;
+    height: 20px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-weight: bold;
+    padding: 5px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    background-color: rgb(81, 82, 81);
+    cursor: pointer;
+}
+
+.cursor {
+    cursor: url('./cursor.png');
+}
+
+button {
+    border: none;
+    background-color: rgb(81, 82, 81);  
+    font-weight: bold;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    color: #f8f8f2;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.center {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.end {
+    align-items: end;
+    text-align: right;
+}
+
+.cabecalho {
+    background-color: #23241f;
+    position: sticky;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 999;
+    padding: 10px 16px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.5);
+}
+
+.home {
+    width: 100%;
+    height: 80vh;
+}
+
+.sobre-mim {
+    width: 100%;
+    height: 80vh;
+}
+
+.tecnologias {
+    width: 100%;
+    height: 80vh;
+}
+
+.projetos {
+    width: 100%;
+    height: 80vh;
+}
+
+.contatos {
+    width: 100%;
+    height: 80vh;
+}
+
+.curriculo {
+    width: 100%;
+    height: 80vh;
+}
+
+.pre {
+    padding: 12px 12px;
+    margin: 0px 50px;
+    background: #23241f;
+    overflow: auto;
+    border-radius: 0.3em;
+    color: #f8f8f2;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.slideshow {
+    position: absolute;
+    width: 30%;
+    height: 320px;
+    right: -100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-in-out,transform 1s ease-in-out;
+    border-radius: 10px;
+}
+
+.slide.active {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.botao-copiar {
+    position: absolute;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 999999;
+    right: 60px;
+    border-radius: 5px;
+    margin-top: -7px;
+}
+
+.texto-copiado {
+    width: 180px;
+    height: 25px;
+    color: black;
+    text-align: center;
+    background-color: rgb(100, 204, 100);
+    border-radius: 10px;
+}
+
+.receber-email {
+    display: inline-block;
+    background-color: #23241f;
+    border: none;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.input-email {
+    display: inline-block;
+    width: 200px;
+    height: 35px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    border-radius: 10px;
+}
+  
+.input-email input {
+    padding: 10px;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    width: 250px;
+    border-radius: 10px;
+}
